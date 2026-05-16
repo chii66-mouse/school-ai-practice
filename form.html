@@ -1,1 +1,50 @@
-<h1>学校説明会アンケート</h1>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>学校説明会アンケート</title>
+</head>
+<body>
+
+  <h1>学校説明会アンケート</h1>
+
+  <form>
+    
+    <p>
+      <label>氏名：</label><br>
+      <input type="text" name="name">
+    </p>
+
+    <p>
+      <label>中学校名：</label><br>
+      <input type="text" name="school">
+    </p>
+
+    <p>
+      <label>参加人数：</label><br>
+      <input type="number" name="people">
+    </p>
+
+    <p>
+      <label>興味のあるコース：</label><br>
+      <select name="course">
+        <option>特進コース</option>
+        <option>文理コース</option>
+        <option>スポーツ進学コース</option>
+        <option>キャリア系コース</option>
+      </select>
+    </p>
+
+    <p>
+      <label>自由記述：</label><br>
+      <textarea name="comment" rows="5" cols="40"></textarea>
+    </p>
+
+    <p>
+      <button type="submit">送信</button>
+    </p>
+
+  </form>
+
+</body>
+</html>
