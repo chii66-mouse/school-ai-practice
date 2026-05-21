@@ -50,10 +50,17 @@
 <script>
 function showMessage() {
 
+
     const name =
         document.querySelector('input[name="name"]').value;
 
+    if (name === "") {
+        alert("氏名を入力してください");
+        return;
+    }
+
     alert("ありがとうございます " + name + "さん");
+
 
 }
 </script>
