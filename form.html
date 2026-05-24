@@ -61,7 +61,7 @@ function showMessage() {
         return;
     }
 
-    fetch("https://docs.google.com/spreadsheets/d/1-6MOtJFlYQt6jt_F3xpfG5NT_mrSUsJvrq3h1d1QkOQ/edit?usp=", {
+    fetch("https://script.google.com/macros/s/AKfycbz9p4lTGPTTnXfVpQg9boDSZRlyroPjjaJ6a6p9DZxYZaSct_BEMrHTYZzhrxmbTMSS/exec", {
         method: "POST",
         body: JSON.stringify({
             name: name,
