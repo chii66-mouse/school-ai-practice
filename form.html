@@ -50,18 +50,29 @@
 <script>
 function showMessage() {
 
-
-    const name =
-        document.querySelector('input[name="name"]').value;
+    const name = document.querySelector('input[name="name"]').value;
+    const school = document.querySelector('input[name="school"]').value;
+    const people = document.querySelector('input[name="people"]').value;
+    const course = document.querySelector('select[name="course"]').value;
+    const comment = document.querySelector('textarea[name="comment"]').value;
 
     if (name === "") {
         alert("氏名を入力してください");
         return;
     }
 
-    alert("ありがとうございます " + name + "さん");
+    fetch("ここにウェブアプリURLを貼る", {
+        method: "POST",
+        body: JSON.stringify({
+            name: name,
+            school: school,
+            people: people,
+            course: course,
+            comment: comment
+        })
+    });
 
+    alert("送信しました");
 
 }
 </script>
-</html>
